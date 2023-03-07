@@ -59,3 +59,47 @@
     border-radius: 0.5rem;
   }
 }
+
+.nutrition-stat-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  h1 {
+    margin-bottom: 0.6rem;
+    sup {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: $light-grey;
+    }
+  }
+  p {
+    color: $primary-300;
+    font-size: 0.9rem;
+  }
+}
+
+.add-nutrition-img-widget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+
+  .add-btns {
+    display: flex;
+    gap: 0.5rem;
+
+    img:nth-child(2) {
+      margin-top: 0.4rem;
+    }
+  }
+
+  p {
+    color: $black;
+  }
+}

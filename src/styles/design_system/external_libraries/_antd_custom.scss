@@ -1,0 +1,11 @@
+:where(.css-dev-only-do-not-override-1lt7wct).ant-progress
+  .ant-progress-circle-trail {
+  stroke: #d0ddf9;
+  stroke-width: 1.5rem;
+}
+
+:where(.css-dev-only-do-not-override-1lt7wct).ant-progress
+  .ant-progress-inner:not(.ant-progress-circle-gradient)
+  .ant-progress-circle-path {
+  stroke-width: 1.5rem;
+}

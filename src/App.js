@@ -15,11 +15,12 @@ import RequestAid from "./screens/Patient/RequestAid";
 import ConfirmImage from "./screens/Patient/ConfirmImage";
 import FoodRecommendation from "./screens/Patient/MealRecommendation";
 import Articles from "./screens/Patient/Articles";
+import NutritionTracker from "./screens/Patient/NutritionTracker";
 
 function App() {
   return (
     <>
-      <Articles />
+      <NutritionTracker />
     </>
   );
 }

@@ -1,5 +1,3 @@
-@import "./cards.scss";
-
 .contents {
   margin: 2rem;
   display: flex;
@@ -90,4 +88,55 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.comp-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: $white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+  .comp-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    h1 {
+      span {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $light-grey;
+        letter-spacing: normal;
+      }
+    }
+
+    /*
+    h5 {
+      font-size: 1rem;
+      color: $primary-300;
+    }
+    */
+
+    p {
+      font-size: 0.85rem;
+      color: $black;
+      line-height: 1.3;
+
+      .nutri-composition {
+        float: right;
+
+        .nutri-mg {
+          font-size: 0.6rem;
+        }
+      }
+    }
+
+    .comp-caption {
+      color: $light;
+      font-size: 0.6rem;
+      margin-top: 0.5rem;
+    }
+  }
 }
