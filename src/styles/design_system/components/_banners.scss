@@ -1,0 +1,38 @@
+.quote-wrapper {
+  h4 {
+    margin-bottom: 1rem;
+  }
+  .quote-banner {
+    background-color: $white;
+    color: $dark-grey;
+    box-shadow: -4px 4px 19px rgba(0, 0, 0, 0.08);
+    border-radius: 0.65rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: '"';
+      float: left;
+      text-align: left;
+      color: $primary-300;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 0;
+      margin-top: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    &::after {
+      content: '"';
+      float: right;
+      text-align: right;
+      color: $primary-300;
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 0;
+      margin-top: 1.3rem;
+      margin-bottom: -0.5rem;
+    }
+  }
+}

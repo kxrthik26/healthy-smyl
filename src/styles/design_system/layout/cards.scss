@@ -1,0 +1,61 @@
+.meal-cards-warpper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.meal-recommendation-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 12rem;
+
+  img {
+    object-fit: contain;
+  }
+
+  .meal-rec {
+    color: $dark-grey;
+    margin-bottom: 0.4rem;
+    margin-top: 0.7rem;
+  }
+
+  .cal-info {
+    font-size: 0.8rem;
+    &::after {
+      content: " kcals";
+    }
+  }
+}
+
+.article-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: $white;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+
+  .article-title {
+    margin-bottom: 0.6rem;
+    max-height: 2rem;
+    overflow: hidden;
+    color: $black;
+    font-weight: 500;
+  }
+
+  .article-glimpse {
+    max-height: 2.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.8rem;
+  }
+
+  img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+}
