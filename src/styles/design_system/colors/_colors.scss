@@ -1,28 +1,43 @@
 /* Primary Color */
-$primary-100: #0178FF;
-$primary-200: #0164FF;
-$primary-300: #0153FF;
-$primary-400: #0142CC;
-$primary-500: #0135A3;
+$primary-100: #0178ff;
+$primary-200: #0164ff;
+$primary-300: #0153ff;
+$primary-400: #0142cc;
+$primary-500: #0135a3;
 
 /* Neutrals */
-$white: #FFFFFF;
-$lighter: #F2F2F2;
-$light: #B5B5B5;
+$white: #ffffff;
+$lighter: #f2f2f2;
+$light: #b5b5b5;
 $light-grey: #575757;
-$grey: #3D3D3D;
-$dark-grey: #2B2B2B;
-$dark: #1E1E1E;
+$grey: #3d3d3d;
+$dark-grey: #2b2b2b;
+$dark: #1e1e1e;
 $black: #151515;
 $true-black: #000000;
 
 /* Semantics */
-$red: #DE3232;
-$orange: #DE8532;
-$yellow: #E7D10C;
-$green: #19A875;
+$red: #de3232;
+$orange: #de8532;
+$yellow: #e7d10c;
+$green: #10ab16;
 
 /* Gradients */
-$blue-gradient: linear-gradient(167.75deg, #68EDFE -33.05%, #0153FF 45.64%, #28B0FF 132.97%);
-$red-gradient: linear-gradient(182.52deg, #FE6868 10.8%, #FF1E1E 67.32%, #F42424 130.06%);
-$green-gradient: linear-gradient(167.75deg, #78ECA6 -33.05%, #269E56 45.64%, #78ECA6 132.97%);
+$blue-gradient: linear-gradient(
+  167.75deg,
+  #68edfe -33.05%,
+  #0153ff 45.64%,
+  #28b0ff 132.97%
+);
+$red-gradient: linear-gradient(
+  182.52deg,
+  #fe6868 10.8%,
+  #ff1e1e 67.32%,
+  #f42424 130.06%
+);
+$green-gradient: linear-gradient(
+  167.75deg,
+  #78eca6 -33.05%,
+  #269e56 45.64%,
+  #78eca6 132.97%
+);

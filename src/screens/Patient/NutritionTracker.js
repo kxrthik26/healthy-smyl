@@ -2,6 +2,9 @@ import ReturnButton from "../../components/buttons/ReturnButton";
 import { Progress } from "antd";
 import NutritionStatCard from "../../components/cards/NutritionStatCard";
 import NutritionTrackerImgWidget from "../../components/data_display/NutritionTrackerImgWidget";
+import PrimaryButtonCard from "../../components/cards/PrimaryButtonCard";
+import DetailedMealView from "../../components/buttons/DetailedMealView";
+import TrackerDaySlider from "../../components/banners/TrackerDaySlider";
 
 function NutritionTracker() {
   return (
@@ -11,6 +14,7 @@ function NutritionTracker() {
         <div className="page-headline">
           <h1>Nutrition Tracker</h1>
         </div>
+        <TrackerDaySlider trackingDay={"Today"} />
         <div className="comp-container">
           <Progress type="circle" percent={75} format={() => ""} />
           <div className="comp-wrapper">
@@ -48,6 +52,7 @@ function NutritionTracker() {
             statValue={"3,000"}
           />
         </div>
+        <DetailedMealView mealType={"Breakfast"} calorieAmt={"500"} />
         <div className="btn-wrapper">
           <NutritionTrackerImgWidget mealTime={"Breakfast"} />
           <NutritionTrackerImgWidget mealTime={"Lunch"} />
@@ -55,7 +60,17 @@ function NutritionTracker() {
         </div>
         <div className="section-wrapper">
           <h4>Recommended Meals</h4>
-          <div className="flex-row"></div>
+          <div className="flex-row">
+            <PrimaryButtonCard
+              cardIcon={"bread-icon"}
+              cardLabel={"Breakfast"}
+            />
+            <PrimaryButtonCard
+              cardIcon={"rice-bowl-icon"}
+              cardLabel={"Lunch"}
+            />
+            <PrimaryButtonCard cardIcon={"meat-icon"} cardLabel={"Dinner"} />
+          </div>
         </div>
       </div>
     </>

@@ -1,6 +1,8 @@
 import HomeAvatar from "../../components/avatars/HomeAvatar";
 import QuoteBanner from "../../components/banners/QuoteBanner";
 import TrackerButton from "../../components/buttons/TrackerButton";
+import ArticleCard from "../../components/cards/ArticleCard";
+import DummyImg from "../../styles/resources/images/dummy_food_img.png";
 
 function Home() {
   return (
@@ -29,11 +31,41 @@ function Home() {
             />
           </div>
         </div>
-        <div className="sectionwrapper">
+        <div className="section-wrapper">
           <h4>Awards</h4>
         </div>
-        <div className="sectionwrapper">
+        <div className="section-wrapper">
+          <h4>Support</h4>
+          <div className="flex-row">
+            <a className="support-redirect-btn green-bg">
+              <img className="help-icon" />
+              Get Financial Aid
+            </a>
+            <a className="support-redirect-btn red-bg">
+              <img className="emergency-icon" />
+              Emergency Help Lines
+            </a>
+          </div>
+        </div>
+        <div className="section-wrapper">
           <h4>Articles & Blogs</h4>
+          <div className="article-cards-wrapper">
+            <ArticleCard
+              articleImg={DummyImg}
+              articleTitle={"Commoners Host Parade for HIV Awareness"}
+              articleGlimpse={
+                "Lorem ipsum dolor sit amet consectetur. Risus placerat maecenas sit penatibus a habitant. Risus placerat maecenas sit penatibus a habitant."
+              }
+            />
+            <ArticleCard
+              articleImg={DummyImg}
+              articleTitle={"Commoners Host Parade for HIV Awareness"}
+              articleGlimpse={
+                "Lorem ipsum dolor sit amet consectetur. Risus placerat maecenas sit penatibus a habitant. Risus placerat maecenas sit penatibus a habitant."
+              }
+            />
+          </div>
+          <a className="link-btn">See More</a>
         </div>
       </div>
     </>

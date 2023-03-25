@@ -9,3 +9,14 @@
   .ant-progress-circle-path {
   stroke-width: 1.5rem;
 }
+
+:where(.css-dev-only-do-not-override-1lt7wct).ant-progress.ant-progress-circle
+  .ant-progress-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  &::after {
+    font-size: 0.6rem;
+    white-space: pre;
+  }
+}

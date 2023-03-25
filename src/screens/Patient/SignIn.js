@@ -1,4 +1,4 @@
-import { Input, DatePicker, Checkbox, Button } from "antd";
+import { Input, DatePicker, Checkbox, Button, Select } from "antd";
 import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 import ReturnButton from "../../components/buttons/ReturnButton";
 import GoogleButton from "../../components/buttons/GoogleButton";
@@ -9,6 +9,10 @@ function MemberSignIn() {
 
   const onChange = (e) => {
     console.log(e);
+  };
+
+  const handleChange = (value) => {
+    console.log(`selected ${value}`);
   };
 
   const [passwordVisible, setPasswordVisible] = React.useState(false);
@@ -36,7 +40,12 @@ function MemberSignIn() {
 
         <div className="input-wrapper">
           <p>Date of Birth</p>
-          <DatePicker format={dateFormatList} />
+          <DatePicker
+            format={dateFormatList}
+            style={{
+              width: "100%",
+            }}
+          />
         </div>
 
         <div className="input-wrapper">
@@ -51,6 +60,36 @@ function MemberSignIn() {
         <div className="input-wrapper">
           <p>Phone Number</p>
           <Input placeholder="+94 77 777 7777" allowClear onChange={onChange} />
+        </div>
+
+        <div className="input-wrapper">
+          <p>NIC Number</p>
+          <Input allowClear onChange={onChange} />
+        </div>
+
+        <div className="input-wrapper">
+          <p>District</p>
+          <Select
+            placeholder={"Select District"}
+            style={{
+              width: "100%",
+            }}
+            onChange={handleChange}
+            options={[
+              {
+                value: "colombo",
+                label: "Colombo",
+              },
+              {
+                value: "gampaha",
+                label: "Gampaha",
+              },
+              {
+                value: "galle",
+                label: "Galle",
+              },
+            ]}
+          />
         </div>
 
         <div className="input-wrapper">

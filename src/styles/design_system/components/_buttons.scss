@@ -21,7 +21,7 @@
 }
 
 .google-btn {
-  background-color: $lighter;
+  background-color: $white;
   padding: 0.5rem;
   border-radius: 0.5rem;
   display: flex;
@@ -42,17 +42,27 @@
   }
 }
 
+.rec-exe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .tracker-btn {
   display: flex;
-  flex: 1;
+  flex: 1 1 30%;
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.75rem;
   text-align: center;
-  box-shadow: -4px 4px 19px rgba(0, 0, 0, 0.08);
   border-radius: 0.5rem;
   cursor: pointer;
+  background-color: $white;
+  align-self: stretch;
+  flex-grow: 1;
 
   img {
     height: 2rem;
@@ -74,5 +84,150 @@
 
   &:active {
     opacity: 0.7;
+  }
+}
+
+.detailed-meal-view-btn {
+  display: flex;
+  background-color: $white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  .meal-type {
+    color: $black;
+    margin-bottom: 0.1rem;
+  }
+
+  .cal-amt {
+    color: $primary-300;
+
+    &::after {
+      color: $light-grey;
+      font-size: 0.7rem;
+      content: (" kcal");
+    }
+  }
+
+  img {
+    transform: rotate(180deg);
+  }
+}
+
+.other-exercises {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  p {
+    color: $black;
+    font-weight: 600;
+  }
+
+  img {
+    height: 1.4rem;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.consumption-updater {
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  background-color: $lighter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  img {
+    height: 1rem;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.link-btn {
+  color: $primary-300;
+  text-decoration: none;
+  margin: auto;
+  font-size: 0.9rem;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.support-redirect-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: $white;
+  cursor: pointer;
+  gap: 0.4rem;
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  img {
+    height: 2rem;
+  }
+}
+
+.red-bg {
+  background: $red-gradient;
+}
+
+.green-bg {
+  background: $green-gradient;
+}
+
+.blue-bg {
+  background: $blue-gradient;
+}
+
+.priority-label {
+  display: flex;
+  align-items: center;
+  color: $primary-300;
+  margin-bottom: 0.6rem;
+  gap: 0.3rem;
+
+  img {
+    height: 1rem;
+  }
+}
+
+.meet-info-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  img {
+    height: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-300;
   }
 }
