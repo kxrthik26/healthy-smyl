@@ -231,3 +231,25 @@
     color: $primary-300;
   }
 }
+
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  h5 {
+    margin-bottom: 0.25rem;
+  }
+
+  .doc-specialization {
+    color: $primary-300;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .doc-charge {
+    color: $green;
+  }
+}

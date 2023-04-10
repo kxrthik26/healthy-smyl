@@ -172,3 +172,79 @@
     }
   }
 }
+
+.payment-mthd-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+
+  img {
+    height: 2rem;
+  }
+
+  p {
+    font-weight: 400;
+    color: $black;
+  }
+
+  .note {
+    font-size: 0.75rem;
+    color: $light;
+    margin-top: 0.4rem;
+  }
+}
+
+.points-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.progress-wrapper {
+  p {
+    color: $primary-300;
+    font-size: 0.875rem;
+    float: right;
+  }
+  .progress-txts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.points-obj-header {
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.points-block {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 0.75rem;
+    color: $primary-300;
+    gap: 0.4rem;
+
+    img {
+      height: 1.6rem;
+    }
+  }
+}

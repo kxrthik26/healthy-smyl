@@ -1,5 +1,6 @@
 import ReturnButton from "../../components/buttons/ReturnButton";
 import { Button } from "antd";
+import AppointmentCard from "../../components/cards/AppointmentCard";
 
 function ConfirmAppointment() {
   return (
@@ -9,35 +10,18 @@ function ConfirmAppointment() {
         <div className="page-headline">
           <h1>Confirm Video Appointment</h1>
         </div>
-        <div className="appointment-confirmation-card">
-          <div className="appointment-title">
-            <div className="title-content">
-              <h5>Dr. Paul Verhoeven</h5>
-              <p>Councelor</p>
-            </div>
-            <div className="appointment-ticket">04</div>
-          </div>
-          <div className="meet-info-widget">
-            <img className="calendar-icon" />
-            22 Feb 2023
-          </div>
-          <div className="meet-info-widget">
-            <img className="clock-icon" />
-            10.05 AM
-          </div>
-          <div className="meet-info-widget">
-            <img className="video-icon" />
-            <a href="https://zoom.us/j/91417387016?pwd=OTFJUldNZjNObFlWVVp0M1hzQnl5dz09#success">
-              Join Video Call
-            </a>
-          </div>
-          <div className="spl-notes-wrapper">
-            <p className="spl-note-title">Special Notes</p>
-            <p className="spl-note-content">
-              Share all reports before the appointment
-            </p>
-          </div>
-        </div>
+
+        <AppointmentCard
+          docName={"Dr. Katie Berry"}
+          docSpecialization={"Councelor"}
+          appointmentNo={"100"}
+          appointmentDate={"22 Feb 2023"}
+          appointmentTime={"10:05 AM"}
+          appointmentLink={
+            "https://zoom.us/j/91417387016?pwd=OTFJUldNZjNObFlWVVp0M1hzQnl5dz09#success"
+          }
+          specialNotes={"Share all reports before appointment"}
+        />
 
         <div className="btn-wrapper">
           <Button type="primary" size="medium">

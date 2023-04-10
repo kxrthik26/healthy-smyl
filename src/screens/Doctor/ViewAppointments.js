@@ -12,6 +12,7 @@ function ViewAppointments() {
           <h1>Your Patients</h1>
         </div>
         <div className="article-cards-wrapper">
+          <h5>Today</h5>
           <PatientCard
             patientName={"Quentin Tarrantino"}
             patientImg={DummyImg}
@@ -22,6 +23,9 @@ function ViewAppointments() {
             patientImg={DummyImg}
             appointmentTime={"4.00 PM"}
           />
+        </div>
+        <div className="article-cards-wrapper">
+          <h5>Today</h5>
           <PatientCard
             patientName={"Quentin Tarrantino"}
             patientImg={DummyImg}

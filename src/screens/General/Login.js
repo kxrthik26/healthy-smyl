@@ -33,14 +33,14 @@ function Introduction() {
 
         <div className="btn-wrapper">
           <Button type="primary" size="medium">
-            Sign in as a Patient
+            Login
           </Button>
           <GoogleButton buttonLabel={"Continue with Google"} />
           <Button type="link" size="medium">
             <span style={{ color: "#575757", marginRight: "0.37rem" }}>
               Not a member?
             </span>
-            Login
+            Signup
           </Button>
         </div>
       </div>

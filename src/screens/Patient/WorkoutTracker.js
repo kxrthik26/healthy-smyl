@@ -4,6 +4,7 @@ import TrackerButton from "../../components/buttons/TrackerButton";
 import WorkoutRecommendationCard from "../../components/cards/WorkoutRecommendationCard";
 import sampleimg from "../../styles/resources/images/dummy_food_img.png";
 import TrackerDaySlider from "../../components/banners/TrackerDaySlider";
+import CarouselCard from "../../components/cards/CarouselCard";
 
 function WorkoutTracker() {
   return (
@@ -42,6 +43,11 @@ function WorkoutTracker() {
         </div>
         <div className="section-wrapper">
           <h4>Workout Plans Tailored for You</h4>
+          <CarouselCard
+            carouselCardSubject={"Heroic Aerobic"}
+            carouselCardImg={sampleimg}
+          />
+          {/*
           <div className="workout-plans-wrapper">
             <WorkoutRecommendationCard
               workoutImg={sampleimg}
@@ -59,7 +65,13 @@ function WorkoutTracker() {
               workoutDuration={"30"}
             />
           </div>
+            */}
         </div>
+        <div className="section-wrapper">
+          <h4>Weekly Workout Summary</h4>
+          {/* Add workout summary barcharts here */}
+        </div>
+        {/*
         <div className="section-wrapper">
           <h4>Recommended Exercises</h4>
           <div className="rec-exe-wrapper">
@@ -77,6 +89,7 @@ function WorkoutTracker() {
             />
           </div>
         </div>
+        */}
       </div>
     </>
   );

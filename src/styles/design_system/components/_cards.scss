@@ -393,3 +393,20 @@
     height: 1.75rem;
   }
 }
+
+.carousel-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  border-radius: 1rem;
+
+  img {
+    width: 100%;
+    max-height: 14rem;
+    object-fit: cover;
+  }
+
+  p {
+    padding: 1rem;
+  }
+}

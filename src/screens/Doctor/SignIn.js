@@ -94,7 +94,7 @@ function DoctorSignIn() {
           </Button>
           <Button type="link" size="medium">
             <span style={{ color: "#575757", marginRight: "0.37rem" }}>
-              Using already?
+              Already a member?
             </span>
             Login
           </Button>

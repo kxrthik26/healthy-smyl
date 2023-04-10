@@ -8,7 +8,7 @@ function FinancialAid() {
       <div className="contents">
         <ReturnButton returnLocationLabel={"Home"} />
         <div className="page-headline">
-          <h1>Emergency Helplines</h1>
+          <h1>Financial Aid Helplines</h1>
         </div>
         <div className="helpline-wrapper">
           <FinancialAidCard

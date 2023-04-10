@@ -41,3 +41,15 @@ $green-gradient: linear-gradient(
   #269e56 45.64%,
   #78eca6 132.97%
 );
+
+$purple-gradient: linear-gradient(
+  167.75deg,
+  #78ece5 -33.05%,
+  #ea78ec -33.03%,
+  #95269e 45.64%,
+  #e378ec 132.97%
+);
+
+.purple-bg {
+  background: $purple-gradient;
+}

@@ -1,7 +1,7 @@
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Badge } from "antd";
 
-const HomeAvatar = ({ date, userName }) => {
+const HomeAvatar = ({ date, userName, points }) => {
   return (
     <div className="avatar-wrapper">
       <div className="avatar-text-wrapper">
@@ -9,9 +9,16 @@ const HomeAvatar = ({ date, userName }) => {
         <h5>👋 Hello</h5>
         <h3>{userName}</h3>
       </div>
-      <Badge dot>
-        <Avatar shape="circle" icon={<UserOutlined />} />
-      </Badge>
+      <div className="avatar-n-points-wrapper">
+        <Badge dot>
+          <Avatar shape="circle" icon={<UserOutlined />} />
+        </Badge>
+        <div className="points-display">
+          {points}
+          <p> points</p>
+          <img className="gold-coin" alt="points-coin" />
+        </div>
+      </div>
     </div>
   );
 };

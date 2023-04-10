@@ -57,7 +57,22 @@ function Reminder() {
         </div>
 
         <div className="input-wrapper">
-          <p>Set Time</p>
+          <p>
+            Set Time <span>(Dose 1)</span>
+          </p>
+          <TimePicker
+            onChange={onChange}
+            defaultOpenValue={dayjs("00:00:00", "HH:mm:ss")}
+            style={{
+              width: "100%",
+            }}
+          />
+        </div>
+
+        <div className="input-wrapper">
+          <p>
+            Set Time <span>(Dose 2)</span>
+          </p>
           <TimePicker
             onChange={onChange}
             defaultOpenValue={dayjs("00:00:00", "HH:mm:ss")}

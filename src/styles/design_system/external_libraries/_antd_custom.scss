@@ -20,3 +20,15 @@
     white-space: pre;
   }
 }
+
+:where(
+    .css-dev-only-do-not-override-1lt7wct
+  ).ant-progress.ant-progress-show-info
+  .ant-progress-outer {
+  margin-inline-end: 0;
+  padding-inline-end: 0;
+}
+
+:where(.css-dev-only-do-not-override-1lt7wct).ant-progress .ant-progress-text {
+  display: none;
+}
