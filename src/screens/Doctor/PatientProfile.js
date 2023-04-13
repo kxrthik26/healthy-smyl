@@ -31,15 +31,15 @@ function PatientProfile() {
           <span>as at 06 Feb 2023</span>
         </div>
 
+        <div className="section-wrapper">{/* Add CDC4 Lvl Graph here */}</div>
+
         <div className="flex-row">
           <div className="info-block">
-            <img className="ruler-icon" />
             <h1>
               170<span> cm</span>
             </h1>
           </div>
           <div className="info-block">
-            <img className="scale-icon" />
             <h1>
               90<span> kg</span>
             </h1>
@@ -60,6 +60,23 @@ function PatientProfile() {
           >
             Send
           </Button>
+        </div>
+        <div className="section-wrapper">{/* Add BMI Graph here */}</div>
+        <div className="section-wrapper">
+          <div className="flex-row">
+            <a className="support-redirect-btn blue-bg">
+              <img className="emergency-icon" />
+              View Nutrition Reports
+            </a>
+            <a className="support-redirect-btn blue-bg">
+              <img className="help-icon" />
+              View Workout Reports
+            </a>
+          </div>
+        </div>
+        <div className="view-reports">
+          View Previous Reports
+          <img className="arrow-head-right-icon" />
         </div>
       </div>
     </>

@@ -253,3 +253,47 @@
     color: $green;
   }
 }
+.view-reports {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  img {
+    height: 0.8rem;
+  }
+}
+
+.workout-play-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: auto;
+  img {
+    cursor: pointer;
+    height: 4rem;
+  }
+
+  .previous-icon,
+  .next-icon {
+    height: 2.7rem;
+  }
+}
+
+.workout-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.workout-preview-img {
+  border-radius: 1rem;
+}
+
+.workout-started {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

@@ -46,9 +46,6 @@
 
   .workout-duration {
     font-size: 0.8rem;
-    &::after {
-      content: " mins";
-    }
   }
 }
 
@@ -278,6 +275,14 @@
   border-radius: 0.5rem;
   width: 100%;
 
+  .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.3rem;
+  }
   span {
     font-size: 0.8rem;
     font-weight: 500;
@@ -408,5 +413,35 @@
 
   p {
     padding: 1rem;
+  }
+}
+
+.workout-progress-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: $white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+
+    .workout-type {
+      color: $black;
+    }
+
+    .workout-duration {
+      color: $primary-300;
+      font-size: 0.875rem;
+    }
+  }
+  img {
+    height: 6rem;
+    border-radius: 1rem;
   }
 }

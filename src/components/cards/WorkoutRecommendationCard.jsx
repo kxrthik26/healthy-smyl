@@ -1,4 +1,4 @@
-const workoutRecommendationCard = ({
+const WorkoutRecommendationCard = ({
   workoutImg,
   workoutRecommendation,
   workoutDuration,
@@ -12,4 +12,4 @@ const workoutRecommendationCard = ({
   );
 };
 
-export default workoutRecommendationCard;
+export default WorkoutRecommendationCard;

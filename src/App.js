@@ -23,10 +23,18 @@ import FinancialAid from "./screens/Patient/FinancialAid";
 import AddLovedOnes from "./screens/Patient/AddLovedOnes";
 import Notifications from "./screens/Patient/Notifications";
 import ConfirmAppointment from "./screens/Patient/ConfirmAppointment";
+import AppointmentPayment from "./screens/Patient/AppointmentPayment";
+import AppointmentConfirmed from "./screens/Patient/AppointmentConfirmed";
+import SetAppointmentDateTime from "./screens/Patient/SetAppointmentDateTime";
 import SelectDoctor from "./screens/Patient/SelectDoctor";
 import CardDetails from "./screens/Patient/CardDetails";
 import PaymentMethod from "./screens/Patient/PaymentMethod";
 import PointsTracker from "./screens/Patient/PointsTracker";
+import MedicineConsumptionHistory from "./screens/Patient/MedicineConsumptionHistory";
+import WorkoutPlan from "./screens/Patient/WorkoutPlan";
+import WorkoutSummary from "./screens/Patient/WorkoutSummary";
+import WorkoutStarted from "./screens/Patient/WorkoutStarted";
+import NutritionHistory from "./screens/Patient/NutritionHistory";
 
 //Doctor Pages
 import DoctorSignIn from "./screens/Doctor/SignIn";
@@ -47,7 +55,7 @@ import Settings from "./screens/General/Settings";
 function App() {
   return (
     <>
-      <PatientProfile />
+      <NutritionHistory />
     </>
   );
 }
